@@ -1,2 +1,2 @@
 # javascript-basico
-Sence javascript basico , arrays, condicionales, ciclos
+sitio gubernamental , congreso , senadores
