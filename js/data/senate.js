@@ -6,8 +6,6 @@ var data = {
            {
               "congress": "116",
               "chamber": "Senate",
-              
-              
               "num_results": 102,
               "offset": 0,
               "members": [

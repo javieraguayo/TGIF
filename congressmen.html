@@ -12,12 +12,14 @@
     <!-- -->
 
     <!-- data del senado-->
-    <script type="text/javascript" src="js/data/senate.js" ></script>
+    <script type="text/javascript" src="js/data/house.js" ></script>
 
     <!-- datatable-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
 
+    <!-- css propio--->
+    <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body>
@@ -48,7 +50,7 @@
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                           <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Congress 113
                               </a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -72,35 +74,36 @@ Each U.S. state is represented in the House in proportion to its population as m
             </p>
         </div>
         <div class="row mx-2">
-            <table id="table" class="display" style="width:130%">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Party</th>
-                        <th>State</th>
-                        <th>Years in Office</th>
-                        <th>% votes w/ Party</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                   
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Name</th>
-                        <th>Party</th>
-                        <th>State</th>
-                        <th>Years in Office</th>
-                        <th>% votes w/ Party</th>
-                    </tr>
-                </tfoot>
-            </table>
-            
+            <div class="col-12">
+                <table id="table" class="display">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Party</th>
+                            <th>State</th>
+                            <th>Years in Office</th>
+                            <th>% votes w/ Party</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                       
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Party</th>
+                            <th>State</th>
+                            <th>Years in Office</th>
+                            <th>% votes w/ Party</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div> 
         </div>
         <footer>
             <div class="row mt-4 mb-2">
                 <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light rounded-pill shadow border border-dark" style="background-color: #e3f2fd;display: flex;justify-content: center;">
+                    <nav class="navbar navbar-expand-lg navbar-light rounded-pill shadow border border-dark justify-content-center">
                         <h6>@2020 TGIF | All Rights Reserved</h6>
                     </nav>
                 </div>
