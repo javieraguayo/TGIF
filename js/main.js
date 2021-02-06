@@ -1,8 +1,4 @@
-
-
-
 $(document).ready( function () {
-
     //llenado de tabla toma los datos del json
     var datam = data.results[0].members;
     var table ="";
@@ -25,10 +21,7 @@ $(document).ready( function () {
     $('#table').DataTable();
 });
 
-$(".nav a").on("click", function(){
-    $(".nav li").find(".active").removeClass("active");
-    $(this).parent().addClass("active");
- });
+
 
 
 
