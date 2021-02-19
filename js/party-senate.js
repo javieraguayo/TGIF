@@ -1,6 +1,8 @@
-numeroReps(data);
-porcentajeVotosPartido(data);
-construirTablaEG(objestadisticas.estadisticas);
-construirTablaTopParty(data);
-construirTablaBottomParty(data);
-
+$( document ).ready( async function() {
+    await getDataSenate(url);
+    numeroReps(data);
+    porcentajeVotosPartido(data);
+    construirTablaEG(objestadisticas.estadisticas);
+    construirTablaTopParty(data);
+    construirTablaBottomParty(data);
+})

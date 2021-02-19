@@ -1,35 +1,5 @@
-//2. Numeros y vigencias en JavaScript
-//Números y cadenas en JavaScript
-var total;
-total = 1 + 2;
-console.log("ejercicio 1 : " + total);
 
-var total;
-total =  "1" + "2";
-console.log("ejercicio 2 : " + total);
-
-var total;
-total = 1 + "2";
-console.log("ejercicio 3 : " + total);
-
-var total;
-total  = "1" + 2;
-console.log("ejercicio 4 : " + total);
-
-var total;
-total =+ "2";
-console.log("ejercicio 5 : " + total);
-
-var total;
-total = "" + 2;
-console.log("ejercicio 6 : " + total);
-
-var total;
-total =+"abc";
-console.log("ejercicio 7 : " + total);
-
-//funciones de las nuevas paginas 
-var data = data.results[0].members;
+/* var data = response.results[0].members; */
 function TableSenateHouseCongress(data) {
     //llenado de tabla toma los datos del json (tabla senate y congressmen)
     var table ="";
