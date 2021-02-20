@@ -18,9 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
-    
-    <!-- data del senado-->
-     <script type="text/javascript" src="js/data/senate.js"></script>
+
      <!-- estadisticas json-->
      <script type="text/javascript" src="js/data/estadisticas.js"></script>
     <!-- css propio--->
@@ -97,7 +95,7 @@
             </div>
         </header>
 
-        <div class="row mx-4">
+        <div class="row mt-4">
             <div class="col-6 mt-4">
                 <h2>Party Loyalty</h2>
                 <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda.
@@ -107,7 +105,8 @@
 
             <div class="col-6 mt-4">
                 <h3 class="text-right">Senate at a glance</h3>
-                <table class="table table-bordered">
+                <div  class="spinner d-flex justify-content-center align-self-center"></div>
+                <table class="table table-bordered d-none">
                     <thead>
                       <tr>
                         
@@ -129,7 +128,8 @@
 
             <div class="col-6 mt-4">
                 <h3>Least Loyal (Bottom 10% Party)</h3>
-                <table class="table table-bordered">
+                <div  class="spinner d-flex justify-content-center align-self-center"></div>
+                <table class="table table-bordered d-none">
                     <thead>
                       <tr>
                         <th scope="col">Name</th>
@@ -145,7 +145,8 @@
 
             <div class="col-6 mt-4">
                 <h3 class="text-right">Most Loyal (Top 10% Party)</h3>
-                <table class="table table-bordered">
+                <div  class="spinner d-flex justify-content-center align-self-center"></div>
+                <table class="table table-bordered d-none">
                     <thead>
                       <tr>
                         <th scope="col">Name</th>
@@ -172,9 +173,11 @@
             </div>
         </footer>
     </main>
-</body>
-<!-- js Principal-->
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/party-senate.js"></script>
-
+    <!-- data del senado-->
+    <script type="text/javascript" src="js/data/senate.js"></script>
+    <!-- js Principal-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- propio-->
+    <script type="text/javascript" src="js/party-senate.js"></script>
+    </body>
 </html>

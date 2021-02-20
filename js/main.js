@@ -1,6 +1,8 @@
 
 /* var data = response.results[0].members; */
 function TableSenateHouseCongress(data) {
+   
+  
     //llenado de tabla toma los datos del json (tabla senate y congressmen)
     var table ="";
     //foreach 
@@ -17,7 +19,7 @@ function TableSenateHouseCongress(data) {
     });
 
     $("#table-body").append(table); 
-    $('#table').DataTable(); 
+    
 }
 
 function numeroReps(data) {

@@ -96,7 +96,7 @@
             </div>
         </header>
 
-        <div class="row mx-4">
+        <div class="row mt-4">
             <div class="col-6 mt-4">
                 <h2>Party Loyalty</h2>
                 <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda.
@@ -106,10 +106,10 @@
 
             <div class="col-6 mt-4">
                 <h3 class="text-right">House at a glance</h3>
-                <table class="table table-bordered">
+                <div  class="spinner d-flex justify-content-center align-self-center"></div>
+                <table class="table table-bordered d-none">
                     <thead>
                       <tr>
-                        
                         <th scope="col">Party</th>
                         <th scope="col">No. of Reps</th>
                         <th scope="col">% voted w/ Party</th>
@@ -128,7 +128,8 @@
 
             <div class="col-6 mt-4">
                 <h3>Least Loyal (Bottom 10% Party)</h3>
-                <table class="table table-bordered">
+                <div  class="spinner d-flex justify-content-center align-self-center"></div>
+                <table class="table table-bordered d-none">
                     <thead>
                       <tr>
                         <th scope="col">Name</th>
@@ -144,7 +145,8 @@
 
             <div class="col-6 mt-4">
                 <h3 class="text-right">Most Loyal (Top 10% Party)</h3>
-                <table class="table table-bordered">
+                <div  class="spinner d-flex justify-content-center align-self-center"></div>
+                <table class="table table-bordered d-none">
                     <thead>
                       <tr>
                         <th scope="col">Name</th>
@@ -171,13 +173,11 @@
             </div>
         </footer>
     </main>
-<!-- vue-->
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<!-- js Principal-->
-<script type="text/javascript" src="js/main.js"></script>
-<!-- data house-->
-<script type="text/javascript" src="js/data/house.js"></script>
-<!-- propio-->
-<script type="text/javascript" src="js/party-house.js"></script>
+    <!-- data house-->
+    <script type="text/javascript" src="js/data/house.js"></script>
+    <!-- js Principal-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- propio-->
+    <script type="text/javascript" src="js/party-house.js"></script>
 </body>
 </html>

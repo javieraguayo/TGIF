@@ -6,3 +6,9 @@
     padding: 0;
     font-family: 'Sriracha', cursive;
 }
+
+/*spinner*/
+.spinner {
+    color: #0494cc;
+    margin-top: 2%;
+}

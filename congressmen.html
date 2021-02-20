@@ -20,10 +20,7 @@
         crossorigin="anonymous" />
     <!-- -->
 
-    <!-- data del senado-->
-    <script type="text/javascript" src="js/data/house.js"></script>
-
-    <!-- datatable-->
+     <!-- datatable-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8"
         src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
@@ -34,7 +31,7 @@
 </head>
 
 <body>
-    <main class="container">
+    <main id="app" class="container">
         <header>
             <div class="row">
                 <div class="col-2">
@@ -115,8 +112,8 @@
                 but every state is entitled to at least one representative.
             </p>
         </div>
-        <div class="row mx-2">
-            <div class="col-12">
+        <div id="container-row" class="row mx-2">
+            <div id="container-table" class="col-12 d-none">
                 <table id="table" class="display">
                     <thead>
                         <tr>
@@ -127,8 +124,14 @@
                             <th>% votes w/ Party</th>
                         </tr>
                     </thead>
-                    <tbody id="table-body">
-
+                    <tbody>
+                        <tr v-for="house in dataHouse">
+                            <th scope="row"><a :href="`${house.url}`">{{house.first_name}} {{house.last_name}}</a></th>
+                            <th>{{house.party}}</th>
+                            <th>{{house.state}}</th>
+                            <th>{{house.seniority}}</th>
+                            <th>{{house.total_votes}}</th>
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -142,18 +145,27 @@
                 </table>
             </div>
         </div>
+        <div class="spinner d-flex justify-content-center align-self-center">
+
+        </div>
         <footer>
             <div class="row mt-4 mb-2">
                 <div class="col-12">
                     <nav
                         class="navbar navbar-expand-lg navbar-light rounded-pill shadow border border-dark justify-content-center">
-                        <h6>@2020 TGIF | All Rights Reserved</h6>
+                        <title-footer></title-footer>
                     </nav>
                 </div>
             </div>
         </footer>
     </main>
+    <!--vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- data del senado-->
+    <script type="text/javascript" src="js/data/house.js"></script>
+    <!-- js Principal-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- propio-->
+    <script type="text/javascript" src="js/congress-house.js"></script>
 </body>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/congress-house.js"></script>
 </html>

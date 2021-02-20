@@ -20,8 +20,7 @@
         crossorigin="anonymous" />
     <!-- -->
 
-    <!-- data del senado-->
-    <script type="text/javascript" src="js/data/senate.js"></script>
+    
 
     <!-- datatable-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
@@ -115,8 +114,8 @@
         </div>
 
 
-        <div class="row mx-2">
-            <div class="col-12">
+        <div id="container-row" class="row mx-2">
+            <div id="container-table" class="col-12 d-none">
                 <table id="table" class="display">
                     <thead>
                         <tr>
@@ -142,6 +141,9 @@
                 </table>
             </div>
         </div>
+        <div class="spinner d-flex justify-content-center align-self-center">
+
+        </div>
         <footer>
             <div class="row mt-4 mb-2">
                 <div class="col-12">
@@ -153,9 +155,13 @@
             </div>
         </footer>
     </main>
+    <!--vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- data del senado-->
+    <script type="text/javascript" src="js/data/senate.js"></script>
+    <!-- js Principal-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- propio-->
+    <script type="text/javascript" src="js/congress-senate.js"></script>
 </body>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/congress-senate.js"></script>
-
-
 </html>
